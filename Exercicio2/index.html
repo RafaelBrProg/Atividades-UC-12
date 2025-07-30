@@ -1,13 +1,317 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisenac Tailwind</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/senac.jpg" alt="UniSenac Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="https://github.com/RafaelBrProg">Github</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Técnico em Desenvolvimento de Sistemas</h1>
+                <p class="hero-subtitle">Forme-se em uma das áreas mais promissoras da tecnologia e garanta seu futuro profissional</p>
+                <div class="hero-visual">
+                    <img src="images/logo_senac.png" alt="UniSenac Logo" class="hero-logo">
+                </div>
+                <button class="cta-primary">Inscreva-se Agora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social Section -->
+    <section id="prova-social" class="prova-social">
+        <div class="container">
+            <h2 class="section-title">O que nossos alunos dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/João Pedro.webp" alt="João Pedro">
+                    </div>
+                    <p class="testimonial-text">"O curso me abriu portas incríveis. Em 6 meses já estava trabalhando na área!"</p>
+                    <h4 class="testimonial-name">João Pedro</h4>
+                    <p class="testimonial-role">Desenvolvedor Frontend</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/Mariana Alves.jpg" alt="Mariana Alves">
+                    </div>
+                    <p class="testimonial-text">"Professores excelentes e material atualizado. Recomendo muito!"</p>
+                    <h4 class="testimonial-name">Mariana Alves</h4>
+                    <p class="testimonial-role">Desenvolvedor Full Stack</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/Tiago Fernandes.webp" alt="Tiago Fernandes">
+                    </div>
+                    <p class="testimonial-text">"Consegui minha primeira vaga antes mesmo de terminar o curso."</p>
+                    <h4 class="testimonial-name">Tiago Fernandes</h4>
+                    <p class="testimonial-role">Desenvolvedor Backend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <h2 class="section-title">Por que escolher o UniSenac?</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Certificação Reconhecida</h3>
+                    <p>Diploma reconhecido pelo MEC e valorizado pelo mercado de trabalho</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Metodologia Prática</h3>
+                    <p>Aprenda fazendo projetos reais e desenvolva um portfólio profissional</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Professores Experientes</h3>
+                    <p>Corpo docente formado por profissionais atuantes no mercado</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Parcerias Empresariais</h3>
+                    <p>Conectamos nossos alunos com as melhores empresas da região</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexibilidade de Horários</h3>
+                    <p>Turmas nos turnos manhã, tarde e noite para se adequar à sua rotina</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Alta Empregabilidade</h3>
+                    <p>95% dos nossos alunos estão empregados na área em até 6 meses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta/CTA Section -->
+    <section id="ofertas" class="ofertas">
+        <div class="container">
+            <div class="oferta-content">
+                <h2 class="section-title">Não perca esta oportunidade!</h2>
+                <div class="oferta-grid">
+                    <div class="oferta-info">
+                        <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
+                        <ul class="curso-detalhes">
+                            <li><i class="fas fa-check"></i> Duração: 18 meses</li>
+                            <li><i class="fas fa-check"></i> Carga horária: 1.200 horas</li>
+                            <li><i class="fas fa-check"></i> Modalidade: Presencial</li>
+                            <li><i class="fas fa-check"></i> Certificação: MEC</li>
+                        </ul>
+                        <div class="preco">
+                            <span class="preco-antigo">R$ 299,00/mês</span>
+                            <span class="preco-atual">R$ 199,00/mês</span>
+                            <span class="desconto">33% de desconto</span>
+                            <div class="countdown-container">
+                                <p>Inscrições encerram em:</p>
+                                <div id="countdown" class="countdown">Carregando...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="datas-importantes">
+                        <h4>Datas Importantes</h4>
+                        <div class="data-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Inscrições:</strong> Até 30/11/2024
+                            </div>
+                        </div>
+                        <div class="data-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <strong>Início das aulas:</strong> 15/01/2025
+                            </div>
+                        </div>
+                        <div class="data-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Previsão de formatura:</strong> Junho/2026
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="cta-secondary" onclick="openModal()">Garantir Minha Vaga</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Inscrição -->
+    <div id="inscricaoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Inscreva-se no Curso</h2>
+            <form id="inscricaoForm" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="turno">Turno Preferido</label>
+                    <select id="turno" name="turno">
+                        <option value="">Selecione um turno</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem (opcional)</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta-primary">Enviar Inscrição</button>
+            </form>
+        </div>
+    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Preciso ter conhecimento prévio de programação?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! O curso é estruturado para iniciantes e você aprenderá tudo do zero.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>O curso é reconhecido pelo MEC?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Nosso curso é totalmente reconhecido e autorizado pelo MEC.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Vocês oferecem estágio?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Temos parcerias com empresas que oferecem estágios remunerados.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso fazer o curso online?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Atualmente oferecemos apenas o formato presencial para melhor aproveitamento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="garantia">
+                <h3>Nossa Garantia</h3>
+                <p>Se em 30 dias você não estiver satisfeito com o curso, devolvemos 100% do seu dinheiro!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Transforme sua carreira hoje mesmo!</h2>
+            <p>Junte-se a milhares de alunos que já transformaram suas vidas através da tecnologia</p>
+            <button class="cta-primary">Quero Começar Agora</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>UniSenac</h4>
+                    <p>Formando profissionais de excelência há mais de 20 anos</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> unisenac@educar.rs.gov.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Gonçalves Chaves, 602 Centro Pelotas - RS</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UniSenac</p>
+                <p>Desenvolvido por: <strong>Rafael</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
