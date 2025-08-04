@@ -1,0 +1,25 @@
+.personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .Morty1, .Morty2, .Morty3, .Morty4, .Morty5, .Morty6, .Morty7, .Morty8, .Morty9, .Morty10 {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
