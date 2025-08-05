@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import MortysPage from './components/MortysPage';
+import RicksPage from './components/RicksPage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         </header>
         <Routes>
           <Route path="/mortys" element={<MortysPage />} />
+          <Route path="/ricks" element={<RicksPage />} />
         </Routes>
       </div>
     </Router>

@@ -1,1 +1,0 @@
-https://rickandmorty.fandom.com/wiki/Category:Ricks
