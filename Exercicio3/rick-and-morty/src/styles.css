@@ -1,116 +1,105 @@
-/* Resetando margens e paddings padrão */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo geral do corpo */
+/* Corpo da página */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f4f9;
   color: #333;
   padding: 20px;
 }
 
-/* Cabeçalho */
+/* Título principal */
 h2 {
   text-align: center;
   font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
+  color: #222;
+  margin-bottom: 30px;
 }
 
-/* Container principal */
-div.personagens {
+/* Container dos personagens */
+.personagens {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-/* Estilo para cada personagem (Morty ou Rick) */
-.Morty1, .Rick1, .Morty2, .Rick2, .Morty3, .Rick3, .Morty4, .Rick4, .Morty5, .Rick5 {
+/* Cartão do personagem */
+.card {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Morty6, .Rick6, .Morty7, .Rick7, .Morty8, .Rick8, .Morty9, .Rick9, .Morty10, .Rick10 {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Estilo quando o personagem é expandido */
-.Morty1:hover, .Rick1:hover {
+.card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Imagem do personagem */
-img {
+.card img {
   width: 200px;
-  height: auto;
+  height: 200px;
   border-radius: 8px;
   margin-bottom: 15px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #eee;
 }
+
 
 /* Botão de expandir/colapsar */
-button {
-  padding: 8px 15px;
+.card button {
+  padding: 8px 16px;
   background-color: #007BFF;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+  margin-top: 10px;
 }
 
-button:hover {
+.card button:hover {
   background-color: #0056b3;
 }
 
-/* Detalhes expandidos */
-.Morty1 div, .Rick1 div {
+/* Área de detalhes expandida */
+.card .details {
   margin-top: 15px;
   text-align: left;
+  width: 100%;
 }
 
-/* Estilos para as características dos personagens */
-p {
+.card .details p {
   margin-bottom: 10px;
+  line-height: 1.4;
 }
 
 strong {
   color: #007BFF;
 }
 
-img{
-
-}
-
-/* Ajuste no layout para dispositivos móveis */
+/* Responsividade */
 @media (max-width: 768px) {
-  div.personagens {
+  .personagens {
     flex-direction: column;
     align-items: center;
   }
 
-  .Morty1, .Rick1 {
+  .card {
     width: 90%;
   }
 }
-
